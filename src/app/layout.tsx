@@ -1,5 +1,12 @@
 import "./globals.css";
 
+export const metadata = {
+  title: "Mike Garavani",
+  icons: {
+    icon: "/favicon.png",
+  },
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -7,7 +14,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex min-h-screen flex-col font-sans">{children}</body>
+      <head />
+      <body className="flex min-h-screen font-raleway">{children}</body>
     </html>
   );
 }
